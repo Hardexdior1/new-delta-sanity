@@ -1,0 +1,50 @@
+{
+  "name": "type",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+   
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.2",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "axios": "^1.8.4",
+    "date-fns": "^4.1.0",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.12.2",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.509.0",
+    "next": "15.0.3",
+    "next-sitemap": "^4.2.3",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-date-range": "^2.0.1",
+    "react-datepicker": "^8.3.0",
+    "react-day-picker": "^9.6.4",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "react-intersection-observer": "^9.15.0",
+    "react-paystack": "^6.0.0",
+    "react-select": "^5.10.1",
+    "react-slick": "^0.30.3",
+    "react-toastify": "^11.0.3",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.8",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

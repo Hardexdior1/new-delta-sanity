@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* color: var(--foreground); */
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  @apply text-3xl md:text-4xl lg:text-[4rem] font-bold lg:leading-[65px] font-[family-name:var(--font-clash-display)];
+}
+
+h2 {
+  @apply text-2xl lg:text-[2.5rem] lg:leading-[45px]  ;
+}
+
+h3 {
+  @apply text-lg md:text-xl lg:text-2xl font-medium;
+}
+
+h4 {
+  @apply text-base md:text-lg lg:text-xl font-medium;
+}
+
+p {
+  @apply text-base lg:text-lg text-[#7E7C7C];
+}
+
+.slide{
+  max-width: 400px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/*  */
+@layer components {
+  .container,body {
+    margin: auto;
+    max-width: 1536px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    .container {
+      /* max-width: 1000px; */
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1020px) {
+    .container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  .print-area,
+  .print-area * {
+    visibility: visible !important;
+  }
+
+  .print-area {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+  
+  .img-zone{
+    display: none !important;
+
+  }
+}
+
