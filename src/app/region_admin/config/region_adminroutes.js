@@ -18,7 +18,7 @@ export const RegionAdmin_Routes = [
     )
   },
   {
-    path: "/region_admin/create-zone",
+    path: "/region_admin/create-base-admin",
     label: "Create base",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
