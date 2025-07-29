@@ -1,6 +1,6 @@
-export const Admin_Routes = [
+export const RegionAdmin_Routes = [
   {
-    path: "/admin",
+    path: "/region_admin",
     label: "Overview",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -9,7 +9,7 @@ export const Admin_Routes = [
     )
   },
   {
-    path: "/admin/reports",
+    path: "/region_admin/reports",
     label: "All Reports",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -18,8 +18,8 @@ export const Admin_Routes = [
     )
   },
   {
-    path: "/admin/create-zone",
-    label: "Create Unit",
+    path: "/region_admin/create-zone",
+    label: "Create base",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 12V4m0 0l-4 4m4-4l4 4" />
@@ -28,7 +28,7 @@ export const Admin_Routes = [
   }
   ,
   {
-  path: "/admin/profile",
+  path: "/region_admin/profile",
   label: "Profile",
   icon: (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

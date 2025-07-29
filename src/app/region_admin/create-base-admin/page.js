@@ -41,11 +41,11 @@ console.log(res)
 
   return (
     <section className="bg-white border border-gray-300 rounded-lg p-6 max-w-md mx-auto mt-6">
-      <h2 className="text-lg font-semibold text-black mb-4">Create a Unit</h2>
+      <h2 className="text-lg font-semibold text-black mb-4">Create a Base</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-sm font-medium mb-1 text-gray-700">Unit Name</label>
+          <label className="block text-sm font-medium mb-1 text-gray-700">Base Name</label>
           <input
             type="text"
             value={fullName}
@@ -71,7 +71,7 @@ console.log(res)
           disabled={loading}
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm disabled:opacity-50"
         >
-          {loading ? 'Creating...' : 'Create Unit'}
+          {loading ? 'Creating...' : 'Create Base'}
         </button>
       </form>
 
