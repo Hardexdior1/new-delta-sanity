@@ -48,7 +48,7 @@ useEffect(() => {
         localStorage.setItem("user",JSON.stringify(loggedinUser))
         localStorage.setItem("token",loggedinUser.token)
         setUser(loggedinUser);
-        router.push(loggedinUser.user.role);
+        router.push(loggedinUser.user.role=='base_admin'?'/admin':loggedinUser.user.role);
         toast.success("Login successful! Redirecting...");
         setLoadingLogin(false)
       } catch (error) {
@@ -107,7 +107,7 @@ useEffect(() => {
           return false;
         }
       };
-      
+
       // handlePasswordReset()
       const [loadingLogOut,setLoadingLogOut]=useState(false)
       const [showLogOut,setShowLogout]=useState(false)
