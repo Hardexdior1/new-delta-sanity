@@ -3,7 +3,7 @@
 'use client'
 import withAuth from '../hoc/withAuth'
 import { usePathname } from 'next/navigation';
-import {Region_Routes} from './config/region_adminroutes'
+// import {Region_Routes} from './config/region_adminroutes'
 import { useState } from 'react';
 import Link from 'next/link';
 import { RegionAdmin_Routes } from './config/region_adminroutes';
@@ -51,15 +51,15 @@ const {user,  handleLogout,loadingLogOut,showLogOut,setShowLogout}=useAuth()
   <p className="text-center text-white font-medium">
     Delta sanity welcomes you,{" "}
     <span className="font-semibold">
-           {user?.fullName?.toUpperCase()}
+           {user?.user.name?.toUpperCase()}
 
     </span>
   </p>
 
   {/* Right: Username + Cool Phrase */}
   <p className="text-right hidden md:block text-white font-semibold">
-    {user?.firstName?.charAt(0).toUpperCase()}
-    {user?.firstName?.slice(1).toLowerCase()} ⚡
+    {user?.user.name?.charAt(0).toUpperCase()}
+    {user?.user.name?.slice(1).toLowerCase()} ⚡
   </p>
 </div>
 

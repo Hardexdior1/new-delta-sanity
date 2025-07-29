@@ -54,8 +54,9 @@ console.log('omo',user)
     <p className="text-white text-center text-base md:text-lg font-medium">
       Delta Sanity welcomes you,&nbsp;
       <span className="font-semibold capitalize">
-      {user?.fullName?.toUpperCase()}
-      {/* {user?.fullName?.slice(1).toLowerCase()} */}
+      {user?.user.name[0]?.toUpperCase()}
+      {user?.user.name?.slice(1).toLowerCase()}
+      
       </span>
     </p>
 

@@ -15,7 +15,7 @@ const Page = () => {
   const [notFound, setNotFound] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [view, setView] = useState(null);
-  const [expandedImg, setExpandedImg] = useState(null);
+  // const [expandedImg, setExpandedImg] = useState(null);
 // console.log(reports)
 
   const [search, setSearch] = useState("");

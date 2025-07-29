@@ -15,6 +15,7 @@ const [mobileOpen, setMobileOpen] = useState(false);
 const pathname = usePathname();
 
 const {user,  handleLogout,loadingLogOut,showLogOut,setShowLogout}=useAuth()
+console.log(user)
     return (
      <main>
 <ToastContainer />
@@ -50,15 +51,15 @@ const {user,  handleLogout,loadingLogOut,showLogOut,setShowLogout}=useAuth()
   <p className="text-center text-white font-medium">
     Delta sanity welcomes you,{" "}
     <span className="font-semibold">
-           {user?.fullName?.toUpperCase()}
+           {user?.user.name?.toUpperCase()}
 
     </span>
   </p>
 
   {/* Right: Username + Cool Phrase */}
   <p className="text-right hidden md:block text-white font-semibold">
-    {user?.firstName?.charAt(0).toUpperCase()}
-    {user?.firstName?.slice(1).toLowerCase()} ⚡
+    {user?.user.name?.charAt(0).toUpperCase()}
+    {user?.user.name?.slice(1).toLowerCase()} ⚡
   </p>
 </div>
 
