@@ -20,10 +20,9 @@ const CreateZoneForm = () => {
       setError('All fields are required.');
       return;
     }
-
     try {
       setLoading(true);
-    let res = await endpointroute.post('auth/baseadmin/create-user ', {
+    let res = await endpointroute.post('auth/regionadmin/create-base-admin', {
         name:fullName,
         email,
       });
