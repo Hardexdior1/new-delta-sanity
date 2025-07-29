@@ -17,6 +17,8 @@ const Page = () => {
   const [view, setView] = useState(null);
   // const [expandedImg, setExpandedImg] = useState(null);
 // console.log(reports)
+console.log(res?.data.user)
+products.sort((a,b)=>b.createdAT-a.createdAT)
 
   const [search, setSearch] = useState("");
   const filteredReports = reports.filter((report) =>

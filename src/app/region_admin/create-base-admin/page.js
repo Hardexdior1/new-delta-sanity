@@ -22,16 +22,17 @@ const CreateZoneForm = () => {
     }
     try {
       setLoading(true);
-    let res = await endpointroute.post('auth/regionadmin/create-base-admin', {
-        name:fullName,
+      console.log('trying to login with', {name:fullName, email})
+   await endpointroute.post('auth/regionadmin/create-base-admin', {
         email,
+        base:fullName,
       });
-console.log(res)
       setSuccessMsg('✅ Base created successfully!');
       setFullName('');
       setEmail('');
+      
     } catch (err) {
-      console.error(err);
+      console.log(err);
       setError('❌ Failed to create Base. Please try again.');
     } finally {
       setLoading(false);
