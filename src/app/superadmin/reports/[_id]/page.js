@@ -23,7 +23,7 @@ const Page = () => {
     const fetchReport = async () => {
       try { 
         setLoading(true);
-        const res = await endpointroute.get(`region/summaries/by-base/${splittedRoute}`);
+        const res = await endpointroute.get(`superadmin/region-reports/${splittedRoute}`);
         setReport(res.data);
         setNotFound(false);
         console.log(res)
